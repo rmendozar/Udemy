@@ -28,7 +28,7 @@ with open(udemy_csv, "r") as csvfile:
         #add reviews
         reviews.append(row[6])
         #add percentage    
-        percent = round(int(row[6])/int(row[5]),2)*100
+        percent = round(int(row[6])/int(row[5])*100,2)
         review_percentage.append(percent)
         #lenght
         new_lenght = row[9].split(" ")
